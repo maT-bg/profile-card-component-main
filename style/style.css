@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans';
-    font-size: 18px;
     color: #2d3248;
+}
+html{
+    font-size: 10px;
 }
 body{
     width: 100vw;
@@ -16,6 +18,7 @@ body{
     
 }
 .main{
+    font-size: 1.8rem;
     background: url(../images/bg-pattern-top.svg) 10% 10% repeat, url(../images/bg-pattern-bottom.svg) -10% -10% repeat;
     display: flex;
     align-items: center;
@@ -27,11 +30,13 @@ body{
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
+    width: 350px;
+    margin: 0px 25px;
+    
 }
 .top-card{
     background-image: url(../images/bg-pattern-card.svg);
     height: 150px;
-    width: 350px;
     background-size: cover;
 }
 
@@ -55,7 +60,7 @@ body{
 .stats{
     display: flex;
     border-top: 1px solid #969696;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     padding: 20px 35px;
@@ -65,15 +70,30 @@ body{
     display: block;
     letter-spacing: 1.5px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .attribution, .attribution a{
-    font-size: 14px;
+    font-size: 1.5rem;
     text-align: center;
     color: #fff;
 }
 .attribution{
     margin: 10px;
+    padding: 0px 10px;
 }
 
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 8px;
+    }
+    .card{
+        margin: 5px;
+    }
+    .stats{
+        padding: 10px;
+    }
+    .top-card{
+        height: 100px;
+    }
+  }
